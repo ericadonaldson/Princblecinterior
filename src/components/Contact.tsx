@@ -31,7 +31,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Email Us</p>
-                  <a href="mailto:hello@luminadecor.com" className="text-xl hover:text-amber-500 transition-colors">hello@luminadecor.com</a>
+                  <a href="mailto:hello@princblec.com" className="text-xl hover:text-amber-500 transition-colors">hello@princblec.com</a>
                 </div>
               </div>
 
@@ -41,7 +41,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Follow Us</p>
-                  <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-xl hover:text-amber-500 transition-colors">@lumina_decor</a>
+                  <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-xl hover:text-amber-500 transition-colors">@princblec_interior</a>
                 </div>
               </div>
 

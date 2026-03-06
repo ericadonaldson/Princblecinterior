@@ -38,7 +38,7 @@ const MeetDesigner = () => {
 
               <div className="pt-8 border-t border-stone-100">
                 <p className="text-stone-400 text-sm uppercase tracking-widest font-bold mb-2">Founder & Lead Designer</p>
-                <p className="text-stone-900 font-serif text-xl italic">Lumina Decor Studio</p>
+                <p className="text-stone-900 font-serif text-xl italic">Princblec Interior Studio</p>
               </div>
             </div>
           </div>

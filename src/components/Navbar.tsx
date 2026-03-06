@@ -30,7 +30,7 @@ const Navbar = () => {
     )}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="text-2xl font-serif font-bold tracking-tighter text-primary">
-          LUMINA<span className="text-amber-600">DECOR</span>
+          PRINCBLEC<span className="text-amber-600"> INTERIOR</span>
         </div>
 
         {/* Desktop Nav */}
@@ -48,7 +48,7 @@ const Navbar = () => {
             <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-amber-600 transition-colors">
               <Instagram size={18} />
             </a>
-            <a href="mailto:hello@luminadecor.com" className="hover:text-amber-600 transition-colors">
+            <a href="mailto:hello@princblec.com" className="hover:text-amber-600 transition-colors">
               <Mail size={18} />
             </a>
           </div>

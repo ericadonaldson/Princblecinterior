@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: "What is your design style?",
-    answer: "While we have a signature 'Lumina' look that emphasizes light and natural textures, we pride ourselves on being versatile. We design for your style, not ours."
+    answer: "While we have a signature 'Princblec' look that emphasizes light and natural textures, we pride ourselves on being versatile. We design for your style, not ours."
   }
 ];
 

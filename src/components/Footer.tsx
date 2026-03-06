@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="py-12 px-6 bg-stone-950 text-stone-500 border-t border-stone-900">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="text-xl font-serif font-bold tracking-tighter text-white">
-          LUMINA<span className="text-amber-600">DECOR</span>
+          PRINCBLEC<span className="text-amber-600"> INTERIOR</span>
         </div>
         
         <div className="flex space-x-8 text-sm">
@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
 
         <p className="text-sm">
-          © {new Date().getFullYear()} Lumina Decor. All rights reserved.
+          © {new Date().getFullYear()} Princblec Interior. All rights reserved.
         </p>
       </div>
     </footer>
