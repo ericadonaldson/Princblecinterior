@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Mail, Instagram, Facebook, MapPin, Phone } from 'lucide-react';
+import { Mail, Instagram, MapPin, Music2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -31,7 +31,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Email Us</p>
-                  <a href="mailto:hello@princblec.com" className="text-xl hover:text-amber-500 transition-colors">hello@princblec.com</a>
+                  <a href="mailto:akporurublessing@mail.com" className="text-xl hover:text-amber-500 transition-colors">akporurublessing@mail.com</a>
                 </div>
               </div>
 
@@ -40,8 +40,18 @@ const Contact = () => {
                   <Instagram size={24} />
                 </div>
                 <div>
-                  <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Follow Us</p>
-                  <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-xl hover:text-amber-500 transition-colors">@princblec_interior</a>
+                  <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Instagram</p>
+                  <a href="https://instagram.com/princblecinterior" target="_blank" rel="noreferrer" className="text-xl hover:text-amber-500 transition-colors">@princblecinterior</a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-6">
+                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-amber-500">
+                  <Music2 size={24} />
+                </div>
+                <div>
+                  <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">TikTok</p>
+                  <a href="https://tiktok.com/@prinblecinterior" target="_blank" rel="noreferrer" className="text-xl hover:text-amber-500 transition-colors">@prinblecinterior</a>
                 </div>
               </div>
 
@@ -51,7 +61,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Studio</p>
-                  <p className="text-xl">123 Design District, NY 10012</p>
+                  <p className="text-xl">Lagos, Nigeria</p>
                 </div>
               </div>
             </div>

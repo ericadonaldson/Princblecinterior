@@ -1,14 +1,13 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Instagram, Mail, Facebook } from 'lucide-react';
+import { Menu, X, Instagram, Mail } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const navigate = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
@@ -66,10 +65,10 @@ const Navbar = () => {
             </a>
           ))}
           <div className="flex items-center space-x-4 border-l pl-8 border-gray-200">
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-amber-600 transition-colors">
+            <a href="https://instagram.com/princblecinterior" target="_blank" rel="noreferrer" className="hover:text-amber-600 transition-colors">
               <Instagram size={18} />
             </a>
-            <a href="mailto:hello@princblec.com" className="hover:text-amber-600 transition-colors">
+            <a href="mailto:akporurublessing@mail.com" className="hover:text-amber-600 transition-colors">
               <Mail size={18} />
             </a>
           </div>
@@ -98,9 +97,8 @@ const Navbar = () => {
             </a>
           ))}
           <div className="flex space-x-6 pt-4 border-t">
-            <Instagram />
-            <Facebook />
-            <Mail />
+            <a href="https://instagram.com/princblecinterior" target="_blank" rel="noreferrer"><Instagram /></a>
+            <a href="mailto:akporurublessing@mail.com"><Mail /></a>
           </div>
         </div>
       )}

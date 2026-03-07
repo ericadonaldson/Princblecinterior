@@ -1,8 +1,7 @@
 "use client";
 
 import React from 'react';
-import { motion } from 'framer-motion';
-import { Instagram, Linkedin, Mail } from 'lucide-react';
+import { Instagram, Mail, Music2 } from 'lucide-react';
 
 const MeetDesigner = () => {
   return (
@@ -25,15 +24,28 @@ const MeetDesigner = () => {
               </p>
               
               <div className="flex items-center gap-6 mb-10">
-                <div className="w-12 h-12 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-amber-600 hover:text-white transition-colors cursor-pointer">
+                <a 
+                  href="https://instagram.com/princblecinterior" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="w-12 h-12 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-amber-600 hover:text-white transition-colors cursor-pointer"
+                >
                   <Instagram size={20} />
-                </div>
-                <div className="w-12 h-12 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-amber-600 hover:text-white transition-colors cursor-pointer">
-                  <Linkedin size={20} />
-                </div>
-                <div className="w-12 h-12 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-amber-600 hover:text-white transition-colors cursor-pointer">
+                </a>
+                <a 
+                  href="https://tiktok.com/@prinblecinterior" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="w-12 h-12 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-amber-600 hover:text-white transition-colors cursor-pointer"
+                >
+                  <Music2 size={20} />
+                </a>
+                <a 
+                  href="mailto:akporurublessing@mail.com"
+                  className="w-12 h-12 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-amber-600 hover:text-white transition-colors cursor-pointer"
+                >
                   <Mail size={20} />
-                </div>
+                </a>
               </div>
 
               <div className="pt-8 border-t border-stone-100">
