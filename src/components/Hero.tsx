@@ -21,17 +21,6 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mb-4"
-        >
-          <span className="text-amber-500 font-serif text-2xl md:text-3xl tracking-[0.3em] uppercase font-bold">
-            Princblec Interior
-          </span>
-        </motion.div>
-
         <motion.span 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
