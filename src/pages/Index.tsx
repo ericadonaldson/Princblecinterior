@@ -7,6 +7,7 @@ import About from '@/components/About';
 import Stats from '@/components/Stats';
 import Partners from '@/components/Partners';
 import Services from '@/components/Services';
+import Slideshow from '@/components/Slideshow';
 import Process from '@/components/Process';
 import Portfolio from '@/components/Portfolio';
 import MeetDesigner from '@/components/MeetDesigner';
@@ -28,6 +29,7 @@ const Index = () => {
       <Stats />
       <Partners />
       <Services />
+      <Slideshow />
       <Process />
       <Portfolio />
       <MeetDesigner />
