@@ -23,14 +23,23 @@ const Navbar = () => {
     { name: 'Contact', href: '#contact' },
   ];
 
+  const logoUrl = "dyad-media://media/crystal-parrot-glow/.dyad/media/d5d3727b20abe80b06b4902e1d0bb240.jpeg";
+
   return (
     <nav className={cn(
       "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4",
-      isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm py-3" : "bg-transparent"
+      isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm py-2" : "bg-transparent"
     )}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="text-2xl font-serif font-bold tracking-tighter text-primary">
-          PRINCBLEC<span className="text-amber-600"> INTERIOR</span>
+        <div className="flex items-center gap-3">
+          <img 
+            src={logoUrl} 
+            alt="Princblec Interior Logo" 
+            className="h-12 w-auto mix-blend-multiply"
+          />
+          <div className="text-xl font-serif font-bold tracking-tighter text-primary hidden sm:block">
+            PRINCBLEC<span className="text-amber-600"> INTERIOR</span>
+          </div>
         </div>
 
         {/* Desktop Nav */}
