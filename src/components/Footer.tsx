@@ -1,12 +1,13 @@
 "use client";
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <footer className="py-12 px-6 bg-stone-950 text-stone-500 border-t border-stone-900">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-        <div className="flex items-center gap-4">
+        <Link to="/" className="flex items-center gap-4 hover:opacity-80 transition-opacity">
           <img 
             src="/src/assets/logo.png" 
             alt="Princblec Interior Logo" 
@@ -15,7 +16,7 @@ const Footer = () => {
           <div className="text-xl font-serif font-bold tracking-tighter text-white">
             PRINCBLEC<span className="text-amber-600"> INTERIOR</span>
           </div>
-        </div>
+        </Link>
         
         <div className="flex space-x-8 text-sm">
           <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

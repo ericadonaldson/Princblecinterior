@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Instagram, Mail, Facebook } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,10 +18,10 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Packages', href: '#packages' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'Portfolio', href: '/#portfolio' },
+    { name: 'Packages', href: '/#packages' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -29,7 +30,7 @@ const Navbar = () => {
       isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm py-2" : "bg-transparent"
     )}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
           <img 
             src="/src/assets/logo.png" 
             alt="Princblec Interior Logo" 
@@ -38,7 +39,7 @@ const Navbar = () => {
           <div className="text-lg md:text-xl font-serif font-bold tracking-tighter text-stone-900">
             PRINCBLEC<span className="text-amber-600"> INTERIOR</span>
           </div>
-        </div>
+        </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-8">
