@@ -68,7 +68,7 @@ const Navbar = () => {
             <a href="https://instagram.com/princblecinterior" target="_blank" rel="noreferrer" className="hover:text-amber-600 transition-colors">
               <Instagram size={18} />
             </a>
-            <a href="mailto:akporurublessing@mail.com" className="hover:text-amber-600 transition-colors">
+            <a href="mailto:akporurublessing@gmail.com" className="hover:text-amber-600 transition-colors">
               <Mail size={18} />
             </a>
           </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
           ))}
           <div className="flex space-x-6 pt-4 border-t">
             <a href="https://instagram.com/princblecinterior" target="_blank" rel="noreferrer"><Instagram /></a>
-            <a href="mailto:akporurublessing@mail.com"><Mail /></a>
+            <a href="mailto:akporurublessing@gmail.com"><Mail /></a>
           </div>
         </div>
       )}

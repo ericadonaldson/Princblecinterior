@@ -31,7 +31,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Email Us</p>
-                  <a href="mailto:akporurublessing@mail.com" className="text-xl hover:text-amber-500 transition-colors">akporurublessing@mail.com</a>
+                  <a href="mailto:akporurublessing@gmail.com" className="text-xl hover:text-amber-500 transition-colors">akporurublessing@gmail.com</a>
                 </div>
               </div>
 

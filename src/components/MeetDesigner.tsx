@@ -41,7 +41,7 @@ const MeetDesigner = () => {
                   <Music2 size={20} />
                 </a>
                 <a 
-                  href="mailto:akporurublessing@mail.com"
+                  href="mailto:akporurublessing@gmail.com"
                   className="w-12 h-12 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-amber-600 hover:text-white transition-colors cursor-pointer"
                 >
                   <Mail size={20} />
