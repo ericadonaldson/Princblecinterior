@@ -55,13 +55,17 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg rounded-full group">
-            View Packages
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-          </Button>
-          <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-md border-white/20 text-white hover:bg-white/20 px-8 py-6 text-lg rounded-full">
-            Our Portfolio
-          </Button>
+          <a href="#packages">
+            <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg rounded-full group">
+              View Packages
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+            </Button>
+          </a>
+          <a href="#portfolio">
+            <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-md border-white/20 text-white hover:bg-white/20 px-8 py-6 text-lg rounded-full">
+              Our Portfolio
+            </Button>
+          </a>
         </motion.div>
       </div>
 
