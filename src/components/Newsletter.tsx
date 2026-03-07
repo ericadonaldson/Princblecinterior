@@ -4,15 +4,26 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { showSuccess } from '@/utils/toast';
+import { showSuccess, showLoading, dismissToast } from '@/utils/toast';
+import { Loader2 } from 'lucide-react';
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    showSuccess("Thank you for subscribing! Check your inbox for design inspiration.");
+    setIsLoading(true);
+    
+    const toastId = showLoading("Joining our journal...");
+
+    // Simulate a network request
+    await new Promise(resolve => setTimeout(resolve, 1500));
+
+    dismissToast(toastId);
+    showSuccess("Welcome to the journal! Check your inbox for your first design guide.");
     setEmail("");
+    setIsLoading(false);
   };
 
   return (
@@ -41,9 +52,14 @@ const Newsletter = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              disabled={isLoading}
             />
-            <Button type="submit" className="bg-white text-amber-600 hover:bg-stone-100 py-7 px-8 rounded-2xl font-bold text-lg">
-              Subscribe
+            <Button 
+              type="submit" 
+              disabled={isLoading}
+              className="bg-white text-amber-600 hover:bg-stone-100 py-7 px-8 rounded-2xl font-bold text-lg min-w-[140px]"
+            >
+              {isLoading ? <Loader2 className="animate-spin" /> : "Subscribe"}
             </Button>
           </form>
           <p className="mt-6 text-amber-100/60 text-sm">We respect your privacy. Unsubscribe at any time.</p>
