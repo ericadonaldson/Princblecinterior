@@ -8,7 +8,7 @@ const reviews = [
   {
     name: "Sarah Jenkins",
     role: "Homeowner",
-    content: "Lumina Decor completely transformed our living room. Their eye for detail and ability to mix modern pieces with our family heirlooms was incredible.",
+    content: "Princblec Interior completely transformed our living room. Their eye for detail and ability to mix modern pieces with our family heirlooms was incredible.",
     rating: 5
   },
   {
