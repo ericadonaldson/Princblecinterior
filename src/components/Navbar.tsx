@@ -33,7 +33,7 @@ const Navbar = () => {
           <img 
             src="/src/assets/logo.png" 
             alt="Princblec Interior Logo" 
-            className="h-16 w-auto mix-blend-multiply"
+            className="h-16 w-auto mix-blend-multiply drop-shadow-md"
           />
         </div>
 

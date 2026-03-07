@@ -10,7 +10,7 @@ const Footer = () => {
           <img 
             src="/src/assets/logo.png" 
             alt="Princblec Interior Logo" 
-            className="h-14 w-auto brightness-0 invert"
+            className="h-14 w-auto brightness-0 invert drop-shadow-[0_2px_8px_rgba(255,255,255,0.1)]"
           />
         </div>
         
