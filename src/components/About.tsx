@@ -15,15 +15,16 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="relative z-10 rounded-3xl overflow-hidden aspect-[4/5]">
+            <div className="relative z-10 rounded-[2.5rem] overflow-hidden aspect-[4/5] shadow-2xl group">
               <img 
-                src="https://images.unsplash.com/photo-1581570732182-2d12f9f74627?q=80&w=800&auto=format&fit=crop" 
+                src="https://images.unsplash.com/photo-1618219944342-824e40a13285?q=80&w=1000&auto=format&fit=crop" 
                 alt="Designer at work"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-amber-100 rounded-3xl -z-0 hidden md:block" />
-            <div className="absolute -top-6 -left-6 w-32 h-32 border-2 border-amber-600 rounded-full -z-0 hidden md:block" />
+            <div className="absolute -bottom-8 -right-8 w-72 h-72 bg-amber-100 rounded-[3rem] -z-0 hidden md:block" />
+            <div className="absolute -top-8 -left-8 w-40 h-40 border-2 border-amber-600/30 rounded-full -z-0 hidden md:block animate-pulse" />
           </motion.div>
 
           <motion.div 
@@ -43,14 +44,14 @@ const About = () => {
               <p>
                 Our approach combines architectural precision with artistic flair. Whether it's a sun-drenched patio or a moody, sophisticated study, we focus on the interplay of light, texture, and form to evoke emotion and ensure comfort.
               </p>
-              <div className="grid grid-cols-2 gap-8 pt-4">
-                <div>
-                  <p className="text-3xl font-serif font-bold text-stone-900">12+</p>
-                  <p className="text-sm uppercase tracking-wider font-bold text-stone-400">Years Experience</p>
+              <div className="grid grid-cols-2 gap-8 pt-6">
+                <div className="p-6 bg-stone-50 rounded-2xl border border-stone-100">
+                  <p className="text-4xl font-serif font-bold text-stone-900">12+</p>
+                  <p className="text-xs uppercase tracking-widest font-bold text-amber-600 mt-1">Years Experience</p>
                 </div>
-                <div>
-                  <p className="text-3xl font-serif font-bold text-stone-900">250+</p>
-                  <p className="text-sm uppercase tracking-wider font-bold text-stone-400">Projects Completed</p>
+                <div className="p-6 bg-stone-50 rounded-2xl border border-stone-100">
+                  <p className="text-4xl font-serif font-bold text-stone-900">250+</p>
+                  <p className="text-xs uppercase tracking-widest font-bold text-amber-600 mt-1">Projects Completed</p>
                 </div>
               </div>
             </div>
