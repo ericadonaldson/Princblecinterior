@@ -33,8 +33,11 @@ const Navbar = () => {
           <img 
             src="/src/assets/logo.png" 
             alt="Princblec Interior Logo" 
-            className="h-16 w-auto mix-blend-multiply drop-shadow-md"
+            className="h-14 w-auto mix-blend-multiply drop-shadow-md"
           />
+          <div className="text-xl font-serif font-bold tracking-tighter text-stone-900 hidden sm:block">
+            PRINCBLEC<span className="text-amber-600"> INTERIOR</span>
+          </div>
         </div>
 
         {/* Desktop Nav */}
