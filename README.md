@@ -1,1 +1,2 @@
-# Welcome to your Dyad app
+# Welcome to Princblec Interior
+# This project was made by Erica Donaldson
