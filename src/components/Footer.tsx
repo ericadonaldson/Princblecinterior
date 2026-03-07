@@ -1,13 +1,26 @@
 "use client";
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
+  const location = useLocation();
+
+  const handleLogoClick = (e: React.MouseEvent) => {
+    if (location.pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="py-12 px-6 bg-stone-950 text-stone-500 border-t border-stone-900">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-        <Link to="/" className="flex items-center gap-4 hover:opacity-80 transition-opacity">
+        <Link 
+          to="/" 
+          onClick={handleLogoClick}
+          className="flex items-center gap-4 hover:opacity-80 transition-opacity"
+        >
           <img 
             src="/src/assets/logo.png" 
             alt="Princblec Interior Logo" 
