@@ -35,8 +35,8 @@ const Navbar = () => {
 
   return (
     <nav className={cn(
-      "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4",
-      isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm py-2" : "bg-transparent"
+      "fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-6 py-4",
+      isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-3" : "bg-transparent py-6"
     )}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link 
@@ -47,9 +47,15 @@ const Navbar = () => {
           <img 
             src="/src/assets/logo.png" 
             alt="Princblec Interior Logo" 
-            className="h-10 md:h-14 w-auto mix-blend-multiply drop-shadow-md"
+            className={cn(
+              "h-10 md:h-14 w-auto transition-all duration-500",
+              isScrolled ? "mix-blend-multiply" : "brightness-0 invert opacity-90"
+            )}
           />
-          <div className="text-lg md:text-xl font-serif font-bold tracking-tighter text-stone-900">
+          <div className={cn(
+            "text-lg md:text-xl font-serif font-bold tracking-tighter transition-colors duration-500",
+            isScrolled ? "text-stone-900" : "text-stone-200"
+          )}>
             PRINCBLEC<span className="text-amber-600"> INTERIOR</span>
           </div>
         </Link>
@@ -60,16 +66,36 @@ const Navbar = () => {
             <a 
               key={link.name} 
               href={link.href}
-              className="text-sm font-medium hover:text-amber-600 transition-colors"
+              className={cn(
+                "text-sm font-medium transition-colors duration-500 hover:text-amber-600",
+                isScrolled ? "text-stone-600" : "text-stone-300"
+              )}
             >
               {link.name}
             </a>
           ))}
-          <div className="flex items-center space-x-4 border-l pl-8 border-gray-200">
-            <a href="https://instagram.com/princblecinterior" target="_blank" rel="noopener noreferrer" className="hover:text-amber-600 transition-colors">
+          <div className={cn(
+            "flex items-center space-x-4 border-l pl-8 transition-colors duration-500",
+            isScrolled ? "border-stone-200" : "border-white/20"
+          )}>
+            <a 
+              href="https://instagram.com/princblecinterior" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className={cn(
+                "transition-colors duration-500 hover:text-amber-600",
+                isScrolled ? "text-stone-600" : "text-stone-300"
+              )}
+            >
               <Instagram size={18} />
             </a>
-            <a href="mailto:akporurublessing@gmail.com" className="hover:text-amber-600 transition-colors">
+            <a 
+              href="mailto:akporurublessing@gmail.com" 
+              className={cn(
+                "transition-colors duration-500 hover:text-amber-600",
+                isScrolled ? "text-stone-600" : "text-stone-300"
+              )}
+            >
               <Mail size={18} />
             </a>
           </div>
@@ -77,7 +103,10 @@ const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden"
+          className={cn(
+            "md:hidden transition-colors duration-500",
+            isScrolled ? "text-stone-900" : "text-white"
+          )}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X /> : <Menu />}
@@ -86,20 +115,20 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-white border-t p-6 flex flex-col space-y-4 md:hidden animate-in slide-in-from-top duration-300">
+        <div className="absolute top-full left-0 right-0 bg-white border-t p-6 flex flex-col space-y-4 md:hidden animate-in slide-in-from-top duration-300 shadow-xl">
           {navLinks.map((link) => (
             <a 
               key={link.name} 
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-lg font-medium"
+              className="text-lg font-medium text-stone-900"
             >
               {link.name}
             </a>
           ))}
-          <div className="flex space-x-6 pt-4 border-t">
-            <a href="https://instagram.com/princblecinterior" target="_blank" rel="noopener noreferrer"><Instagram /></a>
-            <a href="mailto:akporurublessing@gmail.com"><Mail /></a>
+          <div className="flex space-x-6 pt-4 border-t border-stone-100">
+            <a href="https://instagram.com/princblecinterior" target="_blank" rel="noopener noreferrer" className="text-stone-600"><Instagram /></a>
+            <a href="mailto:akporurublessing@gmail.com" className="text-stone-600"><Mail /></a>
           </div>
         </div>
       )}
