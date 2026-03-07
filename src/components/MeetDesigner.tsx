@@ -34,15 +34,15 @@ const MeetDesigner = () => {
                 <a 
                   href="https://instagram.com/princblecinterior" 
                   target="_blank" 
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="w-14 h-14 rounded-2xl bg-stone-50 flex items-center justify-center text-stone-600 hover:bg-amber-600 hover:text-white hover:shadow-lg hover:shadow-amber-600/20 transition-all duration-300"
                 >
                   <Instagram size={22} />
                 </a>
                 <a 
-                  href="https://tiktok.com/@prinblecinterior" 
+                  href="https://tiktok.com/@princblecinterior" 
                   target="_blank" 
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="w-14 h-14 rounded-2xl bg-stone-50 flex items-center justify-center text-stone-600 hover:bg-amber-600 hover:text-white hover:shadow-lg hover:shadow-amber-600/20 transition-all duration-300"
                 >
                   <Music2 size={22} />

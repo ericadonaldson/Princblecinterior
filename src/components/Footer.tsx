@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Instagram, Mail, Music2 } from 'lucide-react';
 
 const Footer = () => {
   const location = useLocation();
@@ -31,10 +32,16 @@ const Footer = () => {
           </div>
         </Link>
         
-        <div className="flex space-x-8 text-sm">
-          <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-          <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-          <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+        <div className="flex items-center space-x-6">
+          <a href="https://instagram.com/princblecinterior" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+            <Instagram size={20} />
+          </a>
+          <a href="https://tiktok.com/@princblecinterior" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+            <Music2 size={20} />
+          </a>
+          <a href="mailto:akporurublessing@gmail.com" className="hover:text-white transition-colors">
+            <Mail size={20} />
+          </a>
         </div>
 
         <p className="text-sm">
