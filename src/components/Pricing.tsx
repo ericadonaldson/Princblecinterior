@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 const packages = [
   {
     name: "BASIC",
-    price: "$499",
+    price: "Negotiable",
     description: "Perfect for single room refreshes and styling advice.",
     features: [
       "1 Room Consultation",
@@ -21,7 +21,7 @@ const packages = [
   },
   {
     name: "STANDARD",
-    price: "$1,299",
+    price: "Negotiable",
     description: "Comprehensive design for multiple rooms or small exteriors.",
     features: [
       "Up to 3 Rooms / Full Exterior",
@@ -35,7 +35,7 @@ const packages = [
   },
   {
     name: "PREMIUM",
-    price: "$2,999",
+    price: "Negotiable",
     description: "Full-service luxury transformation for your entire property.",
     features: [
       "Full Home Interior & Exterior",
@@ -78,8 +78,7 @@ const Pricing = () => {
               <div className="mb-8">
                 <h4 className="text-xl font-bold tracking-widest mb-2">{pkg.name}</h4>
                 <div className="flex items-baseline gap-1">
-                  <span className="text-4xl font-serif font-bold">{pkg.price}</span>
-                  <span className="text-stone-500">/project</span>
+                  <span className="text-3xl font-serif font-bold">{pkg.price}</span>
                 </div>
                 <p className="mt-4 text-stone-600 text-sm leading-relaxed">{pkg.description}</p>
               </div>
@@ -96,7 +95,7 @@ const Pricing = () => {
               <Button 
                 className={`w-full py-6 rounded-xl font-bold ${pkg.popular ? 'bg-amber-600 hover:bg-amber-700 text-white' : 'bg-stone-900 hover:bg-stone-800 text-white'}`}
               >
-                Select Package
+                Inquire Now
               </Button>
             </motion.div>
           ))}
