@@ -10,7 +10,7 @@ const posts = [
     title: "The Art of Mixing Textures in Modern Living Rooms",
     excerpt: "Discover how to balance velvet, wood, and metal to create a space that feels both cozy and sophisticated.",
     date: "Oct 12, 2023",
-    author: "Elena Vance",
+    author: "Akporuru Blessing",
     image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800&auto=format&fit=crop",
     category: "Interior Tips"
   },
@@ -26,7 +26,7 @@ const posts = [
     title: "Maximizing Small Outdoor Spaces: A Guide",
     excerpt: "Even the smallest balcony can become a sanctuary with the right layout and plant selection.",
     date: "Sep 15, 2023",
-    author: "Elena Vance",
+    author: "Akporuru Blessing",
     image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=800&auto=format&fit=crop",
     category: "Exterior Design"
   }

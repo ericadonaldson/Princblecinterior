@@ -18,14 +18,14 @@ const MeetDesigner = () => {
             <div className="h-[500px] lg:h-auto relative group overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1000&auto=format&fit=crop" 
-                alt="Elena Vance - Lead Designer"
+                alt="Akporuru Blessing - Lead Designer"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-stone-900/10 group-hover:bg-transparent transition-colors duration-500" />
             </div>
             <div className="p-12 lg:p-24 flex flex-col justify-center bg-white">
               <span className="text-amber-600 font-bold tracking-[0.3em] uppercase text-xs mb-6">The Visionary</span>
-              <h3 className="text-4xl md:text-5xl font-serif font-medium text-stone-900 mb-8">Meet Elena Vance</h3>
+              <h3 className="text-4xl md:text-5xl font-serif font-medium text-stone-900 mb-8">Meet Akporuru Blessing</h3>
               <p className="text-stone-600 text-xl leading-relaxed mb-10 italic font-serif">
                 "I believe that a well-designed home is the foundation for a well-lived life. My mission is to reveal the soul of every space I touch, creating environments that inspire peace and creativity."
               </p>
