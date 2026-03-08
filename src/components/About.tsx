@@ -44,16 +44,6 @@ const About = () => {
               <p>
                 Our approach combines architectural precision with artistic flair. Whether it's a sun-drenched patio or a moody, sophisticated study, we focus on the interplay of light, texture, and form to evoke emotion and ensure comfort.
               </p>
-              <div className="grid grid-cols-2 gap-8 pt-6">
-                <div className="p-6 bg-stone-50 rounded-2xl border border-stone-100">
-                  <p className="text-4xl font-serif font-bold text-stone-900">12+</p>
-                  <p className="text-xs uppercase tracking-widest font-bold text-amber-600 mt-1">Years Experience</p>
-                </div>
-                <div className="p-6 bg-stone-50 rounded-2xl border border-stone-100">
-                  <p className="text-4xl font-serif font-bold text-stone-900">250+</p>
-                  <p className="text-xs uppercase tracking-widest font-bold text-amber-600 mt-1">Projects Completed</p>
-                </div>
-              </div>
             </div>
           </motion.div>
         </div>
