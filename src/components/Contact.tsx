@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Mail, Instagram, MapPin, Music2, Facebook } from 'lucide-react';
+import { Mail, Instagram, MapPin, Music2, Facebook, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -25,6 +25,16 @@ const Contact = () => {
             </p>
 
             <div className="space-y-8">
+              <div className="flex items-center gap-6">
+                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-amber-500">
+                  <Phone size={24} />
+                </div>
+                <div>
+                  <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Call Us</p>
+                  <a href="tel:+2348121241719" className="text-xl hover:text-amber-500 transition-colors">+234 812 124 1719</a>
+                </div>
+              </div>
+
               <div className="flex items-center gap-6">
                 <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-amber-500">
                   <Mail size={24} />
