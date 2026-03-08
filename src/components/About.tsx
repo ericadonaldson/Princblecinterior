@@ -39,7 +39,7 @@ const About = () => {
             </h3>
             <div className="space-y-6 text-stone-600 text-lg leading-relaxed">
               <p>
-                At Prinblec Interrior, we believe that your home should be a reflection of your journey, your tastes, and your aspirations. We don't just follow trends; we create timeless environments that resonate with the people who live in them.
+                At Prinblec Interior, we believe that your home should be a reflection of your journey, your tastes, and your aspirations. We don't just follow trends; we create timeless environments that resonate with the people who live in them.
               </p>
               <p>
                 Our approach combines architectural precision with artistic flair. Whether it's a sun-drenched patio or a moody, sophisticated study, we focus on the interplay of light, texture, and form to evoke emotion and ensure comfort.
