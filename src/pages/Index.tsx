@@ -18,7 +18,6 @@ import FAQ from '@/components/FAQ';
 import Newsletter from '@/components/Newsletter';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
-import { MadeWithDyad } from "@/components/made-with-dyad";
 
 const Index = () => {
   return (
@@ -40,7 +39,6 @@ const Index = () => {
       <Newsletter />
       <Contact />
       <Footer />
-      <MadeWithDyad />
     </main>
   );
 };
