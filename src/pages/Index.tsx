@@ -25,11 +25,11 @@ const Index = () => {
     <main className="min-h-screen bg-white selection:bg-amber-100 selection:text-amber-900">
       <Navbar />
       <Hero />
+      <Slideshow />
       <About />
       <Stats />
       <Partners />
       <Services />
-      <Slideshow />
       <Process />
       <Portfolio />
       <MeetDesigner />
