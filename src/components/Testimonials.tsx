@@ -8,13 +8,13 @@ const reviews = [
   {
     name: "Mazi Okeke",
     role: "Founder & CEO of Just10 Homes | Comedian",
-    content: "Princblec Interior brought a level of sophistication to Just10 Homes that we hadn't seen before. The attention to detail is simply unmatched and the results speak for themselves.",
+    content: "Prinblec Interior brought a level of sophistication to Just10 Homes that we hadn't seen before. The attention to detail is simply unmatched and the results speak for themselves.",
     rating: 5
   },
   {
-    name: "Desktalker",
+    name: "Destalker",
     role: "Comedian",
-    content: "As a comedian, I appreciate timing and precision. Princblec delivered exactly that with my home renovation. It's now my favorite place to relax and find inspiration.",
+    content: "As a comedian, I appreciate timing and precision. Prinblec delivered exactly that with my home renovation. It's now my favorite place to relax and find inspiration.",
     rating: 5
   },
   {
@@ -32,7 +32,7 @@ const reviews = [
   {
     name: "Mr. T",
     role: "Content Creator",
-    content: "Creating content requires the perfect backdrop. Princblec designed a studio space for me that looks amazing on camera and feels even better in person. My followers love it!",
+    content: "Creating content requires the perfect backdrop. Prinblec designed a studio space for me that looks amazing on camera and feels even better in person. My followers love it!",
     rating: 5
   },
   {
