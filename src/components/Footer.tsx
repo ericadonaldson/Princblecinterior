@@ -24,11 +24,11 @@ const Footer = () => {
         >
           <img 
             src="/src/assets/logo.png" 
-            alt="Princblec Interior Logo" 
+            alt="Prinblec Interrior Logo" 
             className="h-12 w-auto brightness-0 invert drop-shadow-[0_2px_8px_rgba(255,255,255,0.1)]"
           />
           <div className="text-xl font-serif font-bold tracking-tighter text-white">
-            PRINCBLEC<span className="text-amber-600"> INTERIOR</span>
+            PRINBLEC<span className="text-amber-600"> INTERRIOR</span>
           </div>
         </Link>
         
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
 
         <p className="text-sm">
-          © {new Date().getFullYear()} Princblec Interior. All rights reserved.
+          © {new Date().getFullYear()} Prinblec Interrior. All rights reserved.
         </p>
       </div>
     </footer>

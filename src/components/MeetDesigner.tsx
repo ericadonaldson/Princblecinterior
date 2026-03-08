@@ -57,7 +57,7 @@ const MeetDesigner = () => {
 
               <div className="pt-10 border-t border-stone-100">
                 <p className="text-stone-400 text-xs font-bold uppercase tracking-[0.2em] mb-3">Founder & Lead Designer</p>
-                <p className="text-stone-900 font-serif text-2xl">Princblec Interior Studio</p>
+                <p className="text-stone-900 font-serif text-2xl">Prinblec Interrior Studio</p>
               </div>
             </div>
           </div>
