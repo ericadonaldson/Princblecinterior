@@ -51,7 +51,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Facebook</p>
-                  <a href="https://www.facebook.com/share/1AU4rXDuQ7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-amber-500 transition-colors">Princblec Interior</a>
+                  <a href="https://www.facebook.com/share/1AU4rXDuQ7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-amber-500 transition-colors">Gentle Prince</a>
                 </div>
               </div>
 
