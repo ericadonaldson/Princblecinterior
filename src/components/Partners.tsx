@@ -4,11 +4,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const partners = [
-  { name: "LuxeForm", logo: "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=200&auto=format&fit=crop" },
-  { name: "ArchiStone", logo: "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=200&auto=format&fit=crop" },
-  { name: "VividInteriors", logo: "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=200&auto=format&fit=crop" },
-  { name: "EcoBuild", logo: "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=200&auto=format&fit=crop" },
-  { name: "ModernCraft", logo: "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=200&auto=format&fit=crop" }
+  { name: "Just10 Homes", logo: "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=200&auto=format&fit=crop" },
+  { name: "House of Destalker", logo: "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=200&auto=format&fit=crop" },
+  { name: "KBB Studio", logo: "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=200&auto=format&fit=crop" },
+  { name: "Luxury Hotels", logo: "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=200&auto=format&fit=crop" },
+  { name: "Modern Estates", logo: "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=200&auto=format&fit=crop" }
 ];
 
 const Partners = () => {
