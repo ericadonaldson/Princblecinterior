@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Mail, Instagram, MapPin, Music2 } from 'lucide-react';
+import { Mail, Instagram, MapPin, Music2, Facebook } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -42,6 +42,16 @@ const Contact = () => {
                 <div>
                   <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Instagram</p>
                   <a href="https://instagram.com/princblecinterior" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-amber-500 transition-colors">@princblecinterior</a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-6">
+                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-amber-500">
+                  <Facebook size={24} />
+                </div>
+                <div>
+                  <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Facebook</p>
+                  <a href="https://www.facebook.com/share/1AU4rXDuQ7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-amber-500 transition-colors">Princblec Interior</a>
                 </div>
               </div>
 

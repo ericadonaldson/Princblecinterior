@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Instagram, Mail } from 'lucide-react';
+import { Menu, X, Instagram, Mail, Facebook } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -90,6 +90,17 @@ const Navbar = () => {
               <Instagram size={18} />
             </a>
             <a 
+              href="https://www.facebook.com/share/1AU4rXDuQ7/?mibextid=wwXIfr" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className={cn(
+                "transition-colors duration-500 hover:text-amber-600",
+                isScrolled ? "text-stone-600" : "text-stone-300"
+              )}
+            >
+              <Facebook size={18} />
+            </a>
+            <a 
               href="mailto:akporurublessing@gmail.com" 
               className={cn(
                 "transition-colors duration-500 hover:text-amber-600",
@@ -128,6 +139,7 @@ const Navbar = () => {
           ))}
           <div className="flex space-x-6 pt-4 border-t border-stone-100">
             <a href="https://instagram.com/princblecinterior" target="_blank" rel="noopener noreferrer" className="text-stone-600"><Instagram /></a>
+            <a href="https://www.facebook.com/share/1AU4rXDuQ7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-stone-600"><Facebook /></a>
             <a href="mailto:akporurublessing@gmail.com" className="text-stone-600"><Mail /></a>
           </div>
         </div>

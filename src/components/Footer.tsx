@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Instagram, Mail, Music2 } from 'lucide-react';
+import { Instagram, Mail, Music2, Facebook } from 'lucide-react';
 
 const Footer = () => {
   const location = useLocation();
@@ -35,6 +35,9 @@ const Footer = () => {
         <div className="flex items-center space-x-6">
           <a href="https://instagram.com/princblecinterior" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
             <Instagram size={20} />
+          </a>
+          <a href="https://www.facebook.com/share/1AU4rXDuQ7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+            <Facebook size={20} />
           </a>
           <a href="https://tiktok.com/@princblecinterior" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
             <Music2 size={20} />
