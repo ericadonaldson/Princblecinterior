@@ -1,1 +1,6 @@
-# Welcome to Prinblec Interior
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
