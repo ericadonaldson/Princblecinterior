@@ -23,7 +23,7 @@ const Footer = () => {
           className="flex items-center gap-4 hover:opacity-80 transition-opacity"
         >
           <img 
-            src="/src/assets/logo.png" 
+            src="/src/images/logo.png" 
             alt="Prinblec Interior Logo" 
             className="h-12 w-auto brightness-0 invert drop-shadow-[0_2px_8px_rgba(255,255,255,0.1)]"
           />
@@ -33,7 +33,7 @@ const Footer = () => {
         </Link>
         
         <div className="flex items-center space-x-6">
-          <a href="https://instagram.com/princblecinterior" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+          <a href="https://www.instagram.com/prinblec_interior/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
             <Instagram size={20} />
           </a>
           <a href="https://www.facebook.com/share/1AU4rXDuQ7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">

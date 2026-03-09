@@ -51,7 +51,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Instagram</p>
-                  <a href="https://instagram.com/princblecinterior" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-amber-500 transition-colors">@princblecinterior</a>
+                  <a href="https://www.instagram.com/prinblec_interior/" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-amber-500 transition-colors">@prinblec_interior</a>
                 </div>
               </div>
 

@@ -45,7 +45,7 @@ const Navbar = () => {
           className="flex items-center gap-3 hover:opacity-80 transition-opacity"
         >
           <img 
-            src="/src/assets/logo.png" 
+            src="/src/images/logo.png" 
             alt="Prinblec Interior Logo" 
             className={cn(
               "h-10 md:h-14 w-auto transition-all duration-500",
@@ -79,7 +79,7 @@ const Navbar = () => {
             isScrolled ? "border-stone-200" : "border-white/20"
           )}>
             <a 
-              href="https://instagram.com/princblecinterior" 
+              href="https://www.instagram.com/prinblec_interior/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className={cn(
@@ -138,7 +138,7 @@ const Navbar = () => {
             </a>
           ))}
           <div className="flex space-x-6 pt-4 border-t border-stone-100">
-            <a href="https://instagram.com/princblecinterior" target="_blank" rel="noopener noreferrer" className="text-stone-600"><Instagram /></a>
+            <a href="https://www.instagram.com/prinblec_interior/" target="_blank" rel="noopener noreferrer" className="text-stone-600"><Instagram /></a>
             <a href="https://www.facebook.com/share/1AU4rXDuQ7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-stone-600"><Facebook /></a>
             <a href="mailto:akporurublessing@gmail.com" className="text-stone-600"><Mail /></a>
           </div>
