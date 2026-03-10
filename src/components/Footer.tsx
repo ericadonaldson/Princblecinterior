@@ -23,7 +23,7 @@ const Footer = () => {
           className="flex items-center gap-4 hover:opacity-80 transition-opacity"
         >
           <img 
-            src="/src/logo.png" 
+            src="/logo.png" 
             alt="Prinblec Interior Logo" 
             className="h-12 w-auto brightness-0 invert drop-shadow-[0_4px_12px_rgba(255,255,255,0.15)]"
           />

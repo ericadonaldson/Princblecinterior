@@ -17,7 +17,7 @@ const MeetDesigner = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <div className="h-[500px] lg:h-auto relative group overflow-hidden">
               <img 
-                src="/src/blessing.png" 
+                src="/blessing.png" 
                 alt="Akporuru Blessing - Lead Designer"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />

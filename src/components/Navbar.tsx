@@ -45,7 +45,7 @@ const Navbar = () => {
           className="flex items-center gap-3 hover:opacity-80 transition-opacity"
         >
           <img 
-            src="/src/logo.png" 
+            src="/logo.png" 
             alt="Prinblec Interior Logo" 
             className={cn(
               "h-10 md:h-14 w-auto transition-all duration-500 drop-shadow-md",
