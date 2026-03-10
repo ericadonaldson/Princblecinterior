@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Calendar, MapPin, Maximize2, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, Maximize2, CheckCircle2 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -12,8 +12,6 @@ const projects = {
   "modern-minimalist-living": {
     title: "Modern Minimalist Living",
     category: "Interior",
-    location: "Manhattan, NY",
-    date: "August 2023",
     description: "A complete overhaul of a 2,500 sq ft loft, focusing on clean lines, natural light, and a neutral palette to create a serene urban sanctuary.",
     challenge: "The main challenge was to maintain a minimalist aesthetic while ensuring the space felt warm and lived-in for a young family.",
     solution: "We utilized a mix of textures—raw oak, brushed linen, and polished concrete—to add depth without visual clutter.",
@@ -71,24 +69,6 @@ const ProjectDetail = () => {
 
             <div className="bg-stone-50 rounded-3xl p-8 h-fit border border-stone-100">
               <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-amber-600 shadow-sm">
-                    <MapPin size={18} />
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold text-stone-400 uppercase tracking-wider">Location</p>
-                    <p className="font-medium">{project.location}</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-amber-600 shadow-sm">
-                    <Calendar size={18} />
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold text-stone-400 uppercase tracking-wider">Completed</p>
-                    <p className="font-medium">{project.date}</p>
-                  </div>
-                </div>
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-amber-600 shadow-sm">
                     <Maximize2 size={18} />
