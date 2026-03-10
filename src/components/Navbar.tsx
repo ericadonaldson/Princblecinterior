@@ -48,7 +48,7 @@ const Navbar = () => {
             src="/src/images/logo.png" 
             alt="Prinblec Interior Logo" 
             className={cn(
-              "h-10 md:h-14 w-auto transition-all duration-500",
+              "h-10 md:h-14 w-auto transition-all duration-500 drop-shadow-md",
               isScrolled ? "mix-blend-multiply" : "brightness-0 invert opacity-90"
             )}
           />
