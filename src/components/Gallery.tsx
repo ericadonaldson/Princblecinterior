@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import GalleryVideo from './GalleryVideo';
 
 const galleryItems = [
   { type: 'image', url: "/gallery/project-1.jpg", title: "Elegant Living Room", category: "Interior" },
@@ -50,32 +51,27 @@ const Gallery = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className="relative group overflow-hidden rounded-3xl break-inside-avoid bg-stone-100"
+              className="break-inside-avoid"
             >
               {item.type === 'image' ? (
-                <img 
-                  src={item.url} 
-                  alt={item.title}
-                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
-                />
+                <div className="relative group overflow-hidden rounded-3xl bg-stone-100">
+                  <img 
+                    src={item.url} 
+                    alt={item.title}
+                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-white pointer-events-none">
+                    <span className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-2">{item.category}</span>
+                    <h4 className="text-xl font-serif">{item.title}</h4>
+                  </div>
+                </div>
               ) : (
-                <video 
-                  src={item.url} 
-                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
-                  muted
-                  loop
-                  playsInline
-                  onMouseOver={(e) => (e.target as HTMLVideoElement).play()}
-                  onMouseOut={(e) => (e.target as HTMLVideoElement).pause()}
+                <GalleryVideo 
+                  url={item.url} 
+                  title={item.title} 
+                  category={item.category} 
                 />
               )}
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-white pointer-events-none">
-                <span className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-2">{item.category}</span>
-                <h4 className="text-xl font-serif">{item.title}</h4>
-                {item.type === 'video' && (
-                  <span className="text-[10px] mt-2 text-stone-300 uppercase tracking-widest">Hover to play video</span>
-                )}
-              </div>
             </motion.div>
           ))}
         </div>
