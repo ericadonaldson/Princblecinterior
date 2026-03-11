@@ -4,46 +4,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const galleryImages = [
-  {
-    url: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop",
-    title: "Modern Minimalist Living",
-    category: "Interior"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=800&auto=format&fit=crop",
-    title: "Mediterranean Terrace",
-    category: "Exterior"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=800&auto=format&fit=crop",
-    title: "Serene Bedroom",
-    category: "Interior"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop",
-    title: "Architectural Exterior",
-    category: "Exterior"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop",
-    title: "Contemporary Kitchen",
-    category: "Interior"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1558603668-6570496b66f8?q=80&w=800&auto=format&fit=crop",
-    title: "Zen Garden",
-    category: "Exterior"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=800&auto=format&fit=crop",
-    title: "Urban Loft",
-    category: "Interior"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=800&auto=format&fit=crop",
-    title: "Luxury Poolside",
-    category: "Exterior"
-  }
+  { url: "/gallery/project-1.jpg", title: "Elegant Living Room", category: "Interior" },
+  { url: "/gallery/project-2.jpg", title: "Modern Media Wall", category: "Interior" },
+  { url: "/gallery/project-3.jpg", title: "Sleek TV Unit", category: "Interior" },
+  { url: "/gallery/project-4.jpg", title: "Bespoke Entertainment Center", category: "Interior" },
+  { url: "/gallery/project-5.jpg", title: "Contemporary Kitchen", category: "Interior" },
+  { url: "/gallery/project-6.jpg", title: "Luxury Feature Wall", category: "Interior" },
+  { url: "/gallery/project-7.jpg", title: "Sophisticated Dining Area", category: "Interior" },
+  { url: "/gallery/project-8.jpg", title: "Minimalist Dining Space", category: "Interior" },
+  { url: "/gallery/project-9.jpg", title: "Custom Shelving Design", category: "Interior" },
+  { url: "/gallery/project-10.jpg", title: "Handcrafted Furniture", category: "Interior" },
+  { url: "/gallery/project-11.jpg", title: "High-Gloss Media Console", category: "Interior" },
 ];
 
 const Gallery = () => {
@@ -53,7 +24,7 @@ const Gallery = () => {
         <div className="text-center mb-16">
           <h2 className="text-sm font-bold tracking-widest uppercase text-amber-600 mb-4">Visual Showcase</h2>
           <h3 className="text-4xl md:text-5xl font-serif font-medium text-stone-900">Our Design Gallery</h3>
-          <p className="mt-4 text-stone-500 max-w-2xl mx-auto">A collection of our favorite transformations, from intimate interiors to grand outdoor spaces.</p>
+          <p className="mt-4 text-stone-500 max-w-2xl mx-auto">A collection of our favorite transformations, showcasing our commitment to excellence and detail.</p>
         </div>
 
         <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
