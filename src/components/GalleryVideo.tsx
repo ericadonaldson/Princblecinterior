@@ -36,6 +36,7 @@ const GalleryVideo = ({ url, title, category }: GalleryVideoProps) => {
         className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
         loop
         playsInline
+        muted
       />
       
       {/* Play/Pause Button Overlay */}
