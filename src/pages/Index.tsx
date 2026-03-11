@@ -10,6 +10,7 @@ import Services from '@/components/Services';
 import Slideshow from '@/components/Slideshow';
 import Process from '@/components/Process';
 import Portfolio from '@/components/Portfolio';
+import Gallery from '@/components/Gallery';
 import MeetDesigner from '@/components/MeetDesigner';
 import Pricing from '@/components/Pricing';
 import Testimonials from '@/components/Testimonials';
@@ -31,6 +32,7 @@ const Index = () => {
       <Services />
       <Process />
       <Portfolio />
+      <Gallery />
       <MeetDesigner />
       <Pricing />
       <Testimonials />
