@@ -22,27 +22,39 @@ const Contact = () => {
     const message = formData.get('message') as string;
 
     try {
+      console.log("Attempting to save message to Supabase...");
+      
       // 1. Save to Database
       const { error: dbError } = await supabase
         .from('contact_messages')
         .insert([{ name, email, subject, message }]);
 
-      if (dbError) throw dbError;
+      if (dbError) {
+        console.error("Database Error:", dbError);
+        throw new Error(`Database error: ${dbError.message}`);
+      }
+
+      console.log("Message saved to DB. Triggering email function...");
 
       // 2. Trigger Email Function
-      const { error: funcError } = await supabase.functions.invoke('send-contact-email', {
-        body: { name, email, subject, message },
-      });
+      // We use a try-catch specifically for the function so it doesn't break the whole flow
+      try {
+        const { error: funcError } = await supabase.functions.invoke('send-contact-email', {
+          body: { name, email, subject, message },
+        });
 
-      if (funcError) {
-        console.warn("Database saved, but email notification failed:", funcError);
+        if (funcError) {
+          console.warn("Email function returned an error (but DB saved):", funcError);
+        }
+      } catch (fErr) {
+        console.warn("Failed to invoke email function (but DB saved):", fErr);
       }
 
       showSuccess("Message sent successfully! We'll get back to you soon.");
       (e.target as HTMLFormElement).reset();
-    } catch (error) {
-      showError("Something went wrong. Please try again.");
-      console.error("Error sending message:", error);
+    } catch (error: any) {
+      showError(error.message || "Something went wrong. Please try again.");
+      console.error("Full Error Details:", error);
     } finally {
       setIsSubmitting(false);
     }
