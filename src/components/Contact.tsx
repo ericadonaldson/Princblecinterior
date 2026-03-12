@@ -21,19 +21,31 @@ const Contact = () => {
     const subject = formData.get('subject') as string;
     const message = formData.get('message') as string;
 
-    const { error } = await supabase
-      .from('contact_messages')
-      .insert([{ name, email, subject, message }]);
+    try {
+      // 1. Save to Database
+      const { error: dbError } = await supabase
+        .from('contact_messages')
+        .insert([{ name, email, subject, message }]);
 
-    if (error) {
-      showError("Something went wrong. Please try again.");
-      console.error("Error sending message:", error);
-    } else {
+      if (dbError) throw dbError;
+
+      // 2. Trigger Email Function
+      const { error: funcError } = await supabase.functions.invoke('send-contact-email', {
+        body: { name, email, subject, message },
+      });
+
+      if (funcError) {
+        console.warn("Database saved, but email notification failed:", funcError);
+      }
+
       showSuccess("Message sent successfully! We'll get back to you soon.");
       (e.target as HTMLFormElement).reset();
+    } catch (error) {
+      showError("Something went wrong. Please try again.");
+      console.error("Error sending message:", error);
+    } finally {
+      setIsSubmitting(false);
     }
-    
-    setIsSubmitting(false);
   };
 
   return (
