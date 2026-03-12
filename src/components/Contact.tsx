@@ -1,25 +1,39 @@
 "use client";
 
-import React from 'react';
-import { Mail, Instagram, MapPin, Music2, Facebook, Phone } from 'lucide-react';
+import React, { useState } from 'react';
+import { Mail, Instagram, MapPin, Music2, Facebook, Phone, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { showSuccess } from '@/utils/toast';
+import { showSuccess, showError } from '@/utils/toast';
+import { supabase } from '@/integrations/supabase/client';
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const formData = new FormData(e.target as HTMLFormElement);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const subject = formData.get('subject');
-    const message = formData.get('message');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const mailtoLink = `mailto:akporurublessing@gmail.com?subject=${encodeURIComponent(subject as string)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
     
-    window.location.href = mailtoLink;
-    showSuccess("Opening your email client to send the message...");
+    const formData = new FormData(e.target as HTMLFormElement);
+    const name = formData.get('name') as string;
+    const email = formData.get('email') as string;
+    const subject = formData.get('subject') as string;
+    const message = formData.get('message') as string;
+
+    const { error } = await supabase
+      .from('contact_messages')
+      .insert([{ name, email, subject, message }]);
+
+    if (error) {
+      showError("Something went wrong. Please try again.");
+      console.error("Error sending message:", error);
+    } else {
+      showSuccess("Message sent successfully! We'll get back to you soon.");
+      (e.target as HTMLFormElement).reset();
+    }
+    
+    setIsSubmitting(false);
   };
 
   return (
@@ -101,23 +115,23 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-bold uppercase tracking-wider">Name</label>
-                  <Input name="name" placeholder="Your name" className="bg-stone-50 border-stone-200 py-6" required />
+                  <Input name="name" placeholder="Your name" className="bg-stone-50 border-stone-200 py-6" required disabled={isSubmitting} />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-bold uppercase tracking-wider">Email</label>
-                  <Input name="email" type="email" placeholder="Your email" className="bg-stone-50 border-stone-200 py-6" required />
+                  <Input name="email" type="email" placeholder="Your email" className="bg-stone-50 border-stone-200 py-6" required disabled={isSubmitting} />
                 </div>
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-bold uppercase tracking-wider">Subject</label>
-                <Input name="subject" placeholder="How can we help?" className="bg-stone-50 border-stone-200 py-6" required />
+                <Input name="subject" placeholder="How can we help?" className="bg-stone-50 border-stone-200 py-6" required disabled={isSubmitting} />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-bold uppercase tracking-wider">Message</label>
-                <Textarea name="message" placeholder="Tell us about your project..." className="bg-stone-50 border-stone-200 min-h-[150px]" required />
+                <Textarea name="message" placeholder="Tell us about your project..." className="bg-stone-50 border-stone-200 min-h-[150px]" required disabled={isSubmitting} />
               </div>
-              <Button type="submit" className="w-full bg-amber-600 hover:bg-amber-700 text-white py-8 text-lg rounded-xl font-bold">
-                Send Message
+              <Button type="submit" disabled={isSubmitting} className="w-full bg-amber-600 hover:bg-amber-700 text-white py-8 text-lg rounded-xl font-bold">
+                {isSubmitting ? <Loader2 className="animate-spin mr-2" /> : "Send Message"}
               </Button>
             </form>
           </div>
