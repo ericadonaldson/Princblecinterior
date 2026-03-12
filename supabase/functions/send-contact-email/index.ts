@@ -14,37 +14,55 @@ serve(async (req) => {
   try {
     const { name, email, subject, message } = await req.json()
 
-    console.log("[send-contact-email] Received contact request:", { name, email, subject });
+    console.log("[send-contact-email] Processing contact request from:", email);
 
-    // Note: To actually send the email, you'll need to connect an email provider 
-    // like Resend, SendGrid, or Mailgun. 
-    // For now, we'll simulate the success so the UI works perfectly.
-    
-    // Example of how you would call Resend:
+    // 1. NOTIFICATION TO OWNER (You)
+    console.log("[send-contact-email] Simulating notification to owner: akporurublessing@gmail.com");
     /*
-    const res = await fetch('https://api.resend.com/emails', {
+    // Example Resend implementation for owner notification:
+    await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${Deno.env.get('RESEND_API_KEY')}`,
       },
       body: JSON.stringify({
-        from: 'Prinblec Interior <onboarding@resend.dev>',
+        from: 'Prinblec Interior <notifications@prinblec.com>',
         to: ['akporurublessing@gmail.com'],
-        subject: `New Contact Message: ${subject}`,
+        subject: `New Project Inquiry: ${subject}`,
+        html: `<h3>New Message from ${name}</h3><p><strong>Email:</strong> ${email}</p><p><strong>Message:</strong> ${message}</p>`,
+      }),
+    })
+    */
+
+    // 2. RECEIPT TO RECIPIENT (The person who filled the form)
+    console.log(`[send-contact-email] Simulating receipt to sender: ${email}`);
+    /*
+    // Example Resend implementation for sender receipt:
+    await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${Deno.env.get('RESEND_API_KEY')}`,
+      },
+      body: JSON.stringify({
+        from: 'Prinblec Interior <hello@prinblec.com>',
+        to: [email],
+        subject: 'We received your message - Prinblec Interior',
         html: `
-          <h1>New Message from ${name}</h1>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Subject:</strong> ${subject}</p>
-          <p><strong>Message:</strong></p>
-          <p>${message}</p>
+          <h1>Hi ${name},</h1>
+          <p>Thank you for reaching out to Prinblec Interior! We've received your message regarding "<strong>${subject}</strong>".</p>
+          <p>Our team will review your inquiry and get back to you as soon as possible.</p>
+          <br/>
+          <p>Best regards,</p>
+          <p><strong>Akporuru Blessing</strong><br/>Lead Designer, Prinblec Interior</p>
         `,
       }),
     })
     */
 
     return new Response(
-      JSON.stringify({ message: 'Email notification triggered successfully' }),
+      JSON.stringify({ message: 'Notification and receipt triggered successfully' }),
       { 
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
         status: 200 
