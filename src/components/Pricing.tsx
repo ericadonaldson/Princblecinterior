@@ -50,6 +50,14 @@ const packages = [
 ];
 
 const Pricing = () => {
+  const email = "akporurublessing@gmail.com";
+
+  const handleInquiry = (packageName: string) => {
+    const subject = encodeURIComponent(`Inquiry for ${packageName} Design Package`);
+    const body = encodeURIComponent(`Hello Prinblec Interior,\n\nI am interested in your ${packageName} package. Please provide more information on how we can get started.\n\nThank you.`);
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+  };
+
   return (
     <section id="packages" className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
@@ -93,6 +101,7 @@ const Pricing = () => {
               </ul>
 
               <Button 
+                onClick={() => handleInquiry(pkg.name)}
                 className={`w-full py-6 rounded-xl font-bold ${pkg.popular ? 'bg-amber-600 hover:bg-amber-700 text-white' : 'bg-stone-900 hover:bg-stone-800 text-white'}`}
               >
                 Inquire Now
