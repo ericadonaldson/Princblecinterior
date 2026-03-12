@@ -10,7 +10,16 @@ import { showSuccess } from '@/utils/toast';
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    showSuccess("Message sent! We'll get back to you shortly.");
+    const formData = new FormData(e.target as HTMLFormElement);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const subject = formData.get('subject');
+    const message = formData.get('message');
+
+    const mailtoLink = `mailto:akporurublessing@gmail.com?subject=${encodeURIComponent(subject as string)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+    
+    window.location.href = mailtoLink;
+    showSuccess("Opening your email client to send the message...");
   };
 
   return (
@@ -92,20 +101,20 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-bold uppercase tracking-wider">Name</label>
-                  <Input placeholder="Your name" className="bg-stone-50 border-stone-200 py-6" required />
+                  <Input name="name" placeholder="Your name" className="bg-stone-50 border-stone-200 py-6" required />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-bold uppercase tracking-wider">Email</label>
-                  <Input type="email" placeholder="Your email" className="bg-stone-50 border-stone-200 py-6" required />
+                  <Input name="email" type="email" placeholder="Your email" className="bg-stone-50 border-stone-200 py-6" required />
                 </div>
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-bold uppercase tracking-wider">Subject</label>
-                <Input placeholder="How can we help?" className="bg-stone-50 border-stone-200 py-6" required />
+                <Input name="subject" placeholder="How can we help?" className="bg-stone-50 border-stone-200 py-6" required />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-bold uppercase tracking-wider">Message</label>
-                <Textarea placeholder="Tell us about your project..." className="bg-stone-50 border-stone-200 min-h-[150px]" required />
+                <Textarea name="message" placeholder="Tell us about your project..." className="bg-stone-50 border-stone-200 min-h-[150px]" required />
               </div>
               <Button type="submit" className="w-full bg-amber-600 hover:bg-amber-700 text-white py-8 text-lg rounded-xl font-bold">
                 Send Message
