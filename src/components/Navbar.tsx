@@ -46,19 +46,18 @@ const Navbar = () => {
           className="flex items-center gap-3 hover:opacity-80 transition-opacity"
         >
           <img 
-            src="/logo.png" 
+            src={isScrolled ? "/logo-new.png" : "/logo.png"} 
             alt="Prinblec Interior Logo" 
             className={cn(
               "h-10 md:h-14 w-auto transition-all duration-500 drop-shadow-md",
-              isScrolled ? "mix-blend-multiply" : "brightness-0 invert opacity-90"
+              !isScrolled && "brightness-0 invert opacity-90"
             )}
           />
-          <div className={cn(
-            "text-lg md:text-xl font-serif font-bold tracking-tighter transition-colors duration-500",
-            isScrolled ? "text-stone-900" : "text-stone-200"
-          )}>
-            PRINBLEC<span className="text-[#775646]"> INTERIOR</span>
-          </div>
+          {!isScrolled && (
+            <div className="text-lg md:text-xl font-serif font-bold tracking-tighter transition-colors duration-500 text-stone-200">
+              PRINBLEC<span className="text-[#775646]"> INTERIOR</span>
+            </div>
+          )}
         </Link>
 
         {/* Desktop Nav */}
