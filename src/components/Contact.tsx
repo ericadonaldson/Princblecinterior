@@ -127,7 +127,14 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Studio</p>
-                  <p className="text-xl">Lagos, Nigeria</p>
+                  <a 
+                    href="https://maps.google.com/?q=Gilbert+Odior+Street,+Thomas+Estate,+Ajah,+Lagos" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xl hover:text-brand transition-colors"
+                  >
+                    Gilbert Odior Street, Thomas Estate, Ajah, Lagos
+                  </a>
                 </div>
               </div>
             </div>
