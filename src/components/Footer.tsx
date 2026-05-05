@@ -28,7 +28,7 @@ const Footer = () => {
             className="h-12 w-auto brightness-0 invert drop-shadow-[0_4px_12px_rgba(255,255,255,0.15)]"
           />
           <div className="text-xl font-serif font-bold tracking-tighter text-white">
-            PRINBLEC<span className="text-brand"> INTERIOR</span>
+            PRINBLEC<span className="text-[#775646]"> INTERIOR</span>
           </div>
         </Link>
         

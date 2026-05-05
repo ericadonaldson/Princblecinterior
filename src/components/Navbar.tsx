@@ -57,7 +57,7 @@ const Navbar = () => {
             "text-lg md:text-xl font-serif font-bold tracking-tighter transition-colors duration-500",
             isScrolled ? "text-stone-900" : "text-stone-200"
           )}>
-            PRINBLEC<span className="text-brand"> INTERIOR</span>
+            PRINBLEC<span className="text-[#775646]"> INTERIOR</span>
           </div>
         </Link>
 
