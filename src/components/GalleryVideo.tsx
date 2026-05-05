@@ -54,7 +54,7 @@ const GalleryVideo = ({ url, title, category }: GalleryVideoProps) => {
         "absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent transition-opacity duration-500 flex flex-col justify-end p-8 text-white pointer-events-none",
         isPlaying ? "opacity-0 group-hover:opacity-100" : "opacity-100"
       )}>
-        <span className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-2">{category}</span>
+        <span className="text-xs font-bold uppercase tracking-widest text-brand mb-2">{category}</span>
         <h4 className="text-xl font-serif">{title}</h4>
         <span className="text-[10px] mt-2 text-stone-300 uppercase tracking-widest">
           {isPlaying ? "Click to pause" : "Click to play"}

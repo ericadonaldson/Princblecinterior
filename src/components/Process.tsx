@@ -32,7 +32,7 @@ const Process = () => {
     <section className="py-24 px-6 bg-stone-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-sm font-bold tracking-widest uppercase text-amber-600 mb-4">The Journey</h2>
+          <h2 className="text-sm font-bold tracking-widest uppercase text-brand mb-4">The Journey</h2>
           <h3 className="text-4xl md:text-5xl font-serif font-medium text-stone-900">How We Work</h3>
         </div>
 
@@ -49,7 +49,7 @@ const Process = () => {
               {index < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-12 left-1/2 w-full h-[2px] bg-stone-200 -z-0" />
               )}
-              <div className="relative z-10 w-24 h-24 bg-white rounded-full shadow-sm border border-stone-100 flex items-center justify-center mx-auto mb-8 text-amber-600 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-500">
+              <div className="relative z-10 w-24 h-24 bg-white rounded-full shadow-sm border border-stone-100 flex items-center justify-center mx-auto mb-8 text-brand group-hover:bg-brand group-hover:text-white transition-colors duration-500">
                 {step.icon}
               </div>
               <h4 className="text-xl font-bold mb-4">{step.title}</h4>

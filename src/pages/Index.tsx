@@ -22,7 +22,7 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-white selection:bg-amber-100 selection:text-amber-900">
+    <main className="min-h-screen bg-white selection:bg-brand/20 selection:text-brand">
       <Navbar />
       <Hero />
       <Slideshow />

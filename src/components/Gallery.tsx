@@ -38,7 +38,7 @@ const Gallery = () => {
     <section id="gallery" className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-sm font-bold tracking-widest uppercase text-amber-600 mb-4">Visual Showcase</h2>
+          <h2 className="text-sm font-bold tracking-widest uppercase text-brand mb-4">Visual Showcase</h2>
           <h3 className="text-4xl md:text-5xl font-serif font-medium text-stone-900">Our Design Gallery</h3>
           <p className="mt-4 text-stone-500 max-w-2xl mx-auto">A collection of our favorite transformations, showcasing our commitment to excellence and detail through photos and videos.</p>
         </div>
@@ -61,7 +61,7 @@ const Gallery = () => {
                     className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-white pointer-events-none">
-                    <span className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-2">{item.category}</span>
+                    <span className="text-xs font-bold uppercase tracking-widest text-brand mb-2">{item.category}</span>
                     <h4 className="text-xl font-serif">{item.title}</h4>
                   </div>
                 </div>

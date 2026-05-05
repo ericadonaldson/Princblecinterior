@@ -60,7 +60,7 @@ const Slideshow = () => {
     <section className="py-24 bg-stone-900 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 mb-12 flex flex-col md:flex-row justify-between items-end gap-6">
         <div>
-          <h2 className="text-sm font-bold tracking-widest uppercase text-amber-500 mb-4">Visual Journey</h2>
+          <h2 className="text-sm font-bold tracking-widest uppercase text-brand mb-4">Visual Journey</h2>
           <h3 className="text-4xl md:text-5xl font-serif font-medium text-white">Design Inspiration</h3>
         </div>
         <div className="flex gap-4">
@@ -95,7 +95,7 @@ const Slideshow = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 text-white">
-                  <span className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-2 block">
+                  <span className="text-xs font-bold uppercase tracking-widest text-brand mb-2 block">
                     {slide.category}
                   </span>
                   <h4 className="text-2xl md:text-4xl font-serif">{slide.title}</h4>
@@ -112,7 +112,7 @@ const Slideshow = () => {
             key={index}
             onClick={() => emblaApi && emblaApi.scrollTo(index)}
             className={`h-1.5 rounded-full transition-all duration-300 ${
-              selectedIndex === index ? "w-8 bg-amber-500" : "w-2 bg-white/20"
+              selectedIndex === index ? "w-8 bg-brand" : "w-2 bg-white/20"
             }`}
           />
         ))}
