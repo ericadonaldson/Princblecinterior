@@ -57,7 +57,7 @@ const Navbar = () => {
             "text-lg md:text-xl font-serif font-bold tracking-tighter transition-colors duration-500",
             isScrolled ? "text-stone-900" : "text-stone-200"
           )}>
-            PRINBLEC<span className="text-amber-600"> INTERIOR</span>
+            PRINBLEC<span className="text-brand"> INTERIOR</span>
           </div>
         </Link>
 
@@ -68,7 +68,7 @@ const Navbar = () => {
               key={link.name} 
               href={link.href}
               className={cn(
-                "text-sm font-medium transition-colors duration-500 hover:text-amber-600",
+                "text-sm font-medium transition-colors duration-500 hover:text-brand",
                 isScrolled ? "text-stone-600" : "text-stone-300"
               )}
             >
@@ -84,7 +84,7 @@ const Navbar = () => {
               target="_blank" 
               rel="noopener noreferrer" 
               className={cn(
-                "transition-colors duration-500 hover:text-amber-600",
+                "transition-colors duration-500 hover:text-brand",
                 isScrolled ? "text-stone-600" : "text-stone-300"
               )}
             >
@@ -95,7 +95,7 @@ const Navbar = () => {
               target="_blank" 
               rel="noopener noreferrer" 
               className={cn(
-                "transition-colors duration-500 hover:text-amber-600",
+                "transition-colors duration-500 hover:text-brand",
                 isScrolled ? "text-stone-600" : "text-stone-300"
               )}
             >
@@ -104,7 +104,7 @@ const Navbar = () => {
             <a 
               href="mailto:akporurublessing@gmail.com" 
               className={cn(
-                "transition-colors duration-500 hover:text-amber-600",
+                "transition-colors duration-500 hover:text-brand",
                 isScrolled ? "text-stone-600" : "text-stone-300"
               )}
             >

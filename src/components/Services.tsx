@@ -43,7 +43,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-sm font-bold tracking-widest uppercase text-amber-600 mb-4">Expertise</h2>
+            <h2 className="text-sm font-bold tracking-widest uppercase text-brand mb-4">Expertise</h2>
             <h3 className="text-4xl md:text-5xl font-serif font-medium text-stone-900">Tailored Solutions for Every Space</h3>
           </div>
           <p className="text-stone-500 max-w-sm">
@@ -61,7 +61,7 @@ const Services = () => {
               transition={{ delay: index * 0.1 }}
               className="group"
             >
-              <div className="w-14 h-14 rounded-2xl bg-stone-50 flex items-center justify-center text-amber-600 mb-6 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+              <div className="w-14 h-14 rounded-2xl bg-stone-50 flex items-center justify-center text-brand mb-6 group-hover:bg-brand group-hover:text-white transition-all duration-300">
                 {service.icon}
               </div>
               <h4 className="text-xl font-bold mb-3 text-stone-900">{service.title}</h4>

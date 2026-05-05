@@ -62,7 +62,7 @@ const Pricing = () => {
     <section id="packages" className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-sm font-bold tracking-widest uppercase text-amber-600 mb-4">Investment</h2>
+          <h2 className="text-sm font-bold tracking-widest uppercase text-brand mb-4">Investment</h2>
           <h3 className="text-4xl md:text-5xl font-serif font-medium text-stone-900">Design Packages</h3>
           <p className="mt-4 text-stone-500 max-w-2xl mx-auto">Choose the level of service that best fits your vision and project scope.</p>
         </div>
@@ -75,10 +75,10 @@ const Pricing = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`relative p-8 rounded-3xl border ${pkg.popular ? 'border-amber-600 shadow-xl ring-1 ring-amber-600' : 'border-stone-200'} flex flex-col`}
+              className={`relative p-8 rounded-3xl border ${pkg.popular ? 'border-brand shadow-xl ring-1 ring-brand' : 'border-stone-200'} flex flex-col`}
             >
               {pkg.popular && (
-                <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-600 text-white text-xs font-bold px-4 py-1 rounded-full">
+                <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand text-white text-xs font-bold px-4 py-1 rounded-full">
                   MOST POPULAR
                 </span>
               )}
@@ -94,7 +94,7 @@ const Pricing = () => {
               <ul className="space-y-4 mb-10 flex-grow">
                 {pkg.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3 text-sm text-stone-700">
-                    <Check className="text-amber-600 mt-0.5 shrink-0" size={16} />
+                    <Check className="text-brand mt-0.5 shrink-0" size={16} />
                     {feature}
                   </li>
                 ))}
@@ -102,7 +102,7 @@ const Pricing = () => {
 
               <Button 
                 onClick={() => handleInquiry(pkg.name)}
-                className={`w-full py-6 rounded-xl font-bold ${pkg.popular ? 'bg-amber-600 hover:bg-amber-700 text-white' : 'bg-stone-900 hover:bg-stone-800 text-white'}`}
+                className={`w-full py-6 rounded-xl font-bold ${pkg.popular ? 'bg-brand hover:bg-brand-700 text-white' : 'bg-stone-900 hover:bg-stone-800 text-white'}`}
               >
                 Inquire Now
               </Button>

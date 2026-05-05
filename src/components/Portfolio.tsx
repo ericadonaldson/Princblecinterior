@@ -55,7 +55,7 @@ const Portfolio = () => {
     <section id="portfolio" className="py-24 px-6 bg-stone-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-sm font-bold tracking-widest uppercase text-amber-600 mb-4">Our Work</h2>
+          <h2 className="text-sm font-bold tracking-widest uppercase text-brand mb-4">Our Work</h2>
           <h3 className="text-4xl md:text-5xl font-serif font-medium text-stone-900 mb-8">Curated Spaces</h3>
           
           <div className="flex justify-center gap-4">
@@ -65,7 +65,7 @@ const Portfolio = () => {
                 onClick={() => setFilter(cat)}
                 className={`px-6 py-2 rounded-full text-sm font-bold transition-all ${
                   filter === cat 
-                    ? "bg-amber-600 text-white shadow-lg shadow-amber-600/20" 
+                    ? "bg-brand text-white shadow-lg shadow-brand/20" 
                     : "bg-white text-stone-500 hover:bg-stone-100"
                 }`}
               >
@@ -94,7 +94,7 @@ const Portfolio = () => {
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-white">
-                    <span className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-2">{project.category}</span>
+                    <span className="text-xs font-bold uppercase tracking-widest text-brand-300 mb-2">{project.category}</span>
                     <h4 className="text-2xl font-serif">{project.title}</h4>
                     <p className="text-sm text-stone-300 mt-2 opacity-0 group-hover:opacity-100 transition-opacity delay-100">View Project Details →</p>
                   </div>

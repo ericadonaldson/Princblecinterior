@@ -25,7 +25,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-amber-600/90 rounded-full"
+          className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-brand/90 rounded-full"
         >
           Interior & Exterior Excellence
         </motion.span>
@@ -56,7 +56,7 @@ const Hero = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a href="#packages">
-            <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg rounded-full group">
+            <Button size="lg" className="bg-brand hover:bg-brand-700 text-white px-8 py-6 text-lg rounded-full group">
               View Packages
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
             </Button>

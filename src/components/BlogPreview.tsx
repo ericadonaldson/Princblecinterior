@@ -38,10 +38,10 @@ const BlogPreview = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-sm font-bold tracking-widest uppercase text-amber-600 mb-4">Journal</h2>
+            <h2 className="text-sm font-bold tracking-widest uppercase text-brand mb-4">Journal</h2>
             <h3 className="text-4xl md:text-5xl font-serif font-medium text-stone-900">Design Inspiration</h3>
           </div>
-          <Button variant="ghost" className="text-amber-600 hover:text-amber-700 font-bold group">
+          <Button variant="ghost" className="text-brand hover:text-brand-700 font-bold group">
             View All Articles
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
           </Button>
@@ -63,7 +63,7 @@ const BlogPreview = () => {
                   alt={post.title}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-amber-600">
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-brand">
                   {post.category}
                 </div>
               </div>
@@ -73,7 +73,7 @@ const BlogPreview = () => {
                 <span className="flex items-center gap-1"><User size={14} /> {post.author}</span>
               </div>
               
-              <h4 className="text-xl font-bold mb-3 group-hover:text-amber-600 transition-colors leading-tight">
+              <h4 className="text-xl font-bold mb-3 group-hover:text-brand transition-colors leading-tight">
                 {post.title}
               </h4>
               <p className="text-stone-500 text-sm leading-relaxed line-clamp-2">

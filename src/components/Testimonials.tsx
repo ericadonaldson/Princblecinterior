@@ -54,7 +54,7 @@ const Testimonials = () => {
     <section className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-sm font-bold tracking-widest uppercase text-amber-600 mb-4">Testimonials</h2>
+          <h2 className="text-sm font-bold tracking-widest uppercase text-brand mb-4">Testimonials</h2>
           <h3 className="text-4xl md:text-5xl font-serif font-medium text-stone-900">What Our Clients Say</h3>
         </div>
 
@@ -71,7 +71,7 @@ const Testimonials = () => {
               <Quote className="absolute top-6 right-8 text-stone-200" size={48} />
               <div className="flex gap-1 mb-6">
                 {[...Array(review.rating)].map((_, i) => (
-                  <Star key={i} size={16} className="fill-amber-500 text-amber-500" />
+                  <Star key={i} size={16} className="fill-brand text-brand" />
                 ))}
               </div>
               <p className="text-stone-700 text-lg italic mb-8 leading-relaxed flex-grow">"{review.content}"</p>

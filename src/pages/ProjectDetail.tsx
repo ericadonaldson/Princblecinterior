@@ -38,7 +38,7 @@ const ProjectDetail = () => {
       
       <main className="pt-32 pb-24">
         <div className="max-w-7xl mx-auto px-6">
-          <Link to="/#portfolio" className="inline-flex items-center text-amber-600 font-bold text-sm mb-12 hover:gap-2 transition-all">
+          <Link to="/#portfolio" className="inline-flex items-center text-brand font-bold text-sm mb-12 hover:gap-2 transition-all">
             <ArrowLeft size={16} className="mr-2" /> Back to Portfolio
           </Link>
 
@@ -70,7 +70,7 @@ const ProjectDetail = () => {
             <div className="bg-stone-50 rounded-3xl p-8 h-fit border border-stone-100">
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-amber-600 shadow-sm">
+                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-brand shadow-sm">
                     <Maximize2 size={18} />
                   </div>
                   <div>
@@ -85,7 +85,7 @@ const ProjectDetail = () => {
                 <ul className="space-y-3">
                   {project.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-3 text-sm text-stone-600">
-                      <CheckCircle2 size={16} className="text-amber-600" />
+                      <CheckCircle2 size={16} className="text-brand" />
                       {feature}
                     </li>
                   ))}
@@ -111,7 +111,7 @@ const ProjectDetail = () => {
           <div className="mt-24 text-center bg-stone-900 rounded-[3rem] p-16 text-white">
             <h2 className="text-3xl md:text-4xl font-serif mb-6">Inspired by this project?</h2>
             <p className="text-stone-400 mb-10 max-w-xl mx-auto">Let's discuss how we can bring a similar level of detail and sophistication to your own space.</p>
-            <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-10 py-7 rounded-2xl text-lg font-bold">
+            <Button size="lg" className="bg-brand hover:bg-brand-700 text-white px-10 py-7 rounded-2xl text-lg font-bold">
               Start Your Project
             </Button>
           </div>

@@ -37,7 +37,6 @@ const Contact = () => {
       console.log("Message saved to DB. Triggering email function...");
 
       // 2. Trigger Email Function
-      // We use a try-catch specifically for the function so it doesn't break the whole flow
       try {
         const { error: funcError } = await supabase.functions.invoke('send-contact-email', {
           body: { name, email, subject, message },
@@ -65,7 +64,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
-            <h2 className="text-sm font-bold tracking-widest uppercase text-amber-500 mb-4">Get In Touch</h2>
+            <h2 className="text-sm font-bold tracking-widest uppercase text-brand mb-4">Get In Touch</h2>
             <h3 className="text-4xl md:text-5xl font-serif font-medium mb-8">Let's Create Something Beautiful</h3>
             <p className="text-stone-400 text-lg mb-12 leading-relaxed">
               Ready to transform your space? Whether you have a specific project in mind or just want to explore possibilities, we're here to help.
@@ -73,57 +72,57 @@ const Contact = () => {
 
             <div className="space-y-8">
               <div className="flex items-center gap-6">
-                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-amber-500">
+                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
                   <Phone size={24} />
                 </div>
                 <div>
                   <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Call Us</p>
-                  <a href="tel:+2348121241719" className="text-xl hover:text-amber-500 transition-colors">+234 812 124 1719</a>
+                  <a href="tel:+2348121241719" className="text-xl hover:text-brand transition-colors">+234 812 124 1719</a>
                 </div>
               </div>
 
               <div className="flex items-center gap-6">
-                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-amber-500">
+                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
                   <Mail size={24} />
                 </div>
                 <div>
                   <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Email Us</p>
-                  <a href="mailto:akporurublessing@gmail.com" className="text-xl hover:text-amber-500 transition-colors">akporurublessing@gmail.com</a>
+                  <a href="mailto:akporurublessing@gmail.com" className="text-xl hover:text-brand transition-colors">akporurublessing@gmail.com</a>
                 </div>
               </div>
 
               <div className="flex items-center gap-6">
-                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-amber-500">
+                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
                   <Instagram size={24} />
                 </div>
                 <div>
                   <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Instagram</p>
-                  <a href="https://www.instagram.com/prinblec_interior/" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-amber-500 transition-colors">@prinblec_interior</a>
+                  <a href="https://www.instagram.com/prinblec_interior/" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-brand transition-colors">@prinblec_interior</a>
                 </div>
               </div>
 
               <div className="flex items-center gap-6">
-                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-amber-500">
+                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
                   <Facebook size={24} />
                 </div>
                 <div>
                   <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Facebook</p>
-                  <a href="https://www.facebook.com/share/1AU4rXDuQ7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-amber-500 transition-colors">Gentle Prince</a>
+                  <a href="https://www.facebook.com/share/1AU4rXDuQ7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-brand transition-colors">Gentle Prince</a>
                 </div>
               </div>
 
               <div className="flex items-center gap-6">
-                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-amber-500">
+                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
                   <Music2 size={24} />
                 </div>
                 <div>
                   <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">TikTok</p>
-                  <a href="https://tiktok.com/@princblecinterior" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-amber-500 transition-colors">@princblecinterior</a>
+                  <a href="https://tiktok.com/@princblecinterior" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-brand transition-colors">@princblecinterior</a>
                 </div>
               </div>
 
               <div className="flex items-center gap-6">
-                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-amber-500">
+                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
                   <MapPin size={24} />
                 </div>
                 <div>
@@ -154,7 +153,7 @@ const Contact = () => {
                 <label className="text-sm font-bold uppercase tracking-wider">Message</label>
                 <Textarea name="message" placeholder="Tell us about your project..." className="bg-stone-50 border-stone-200 min-h-[150px]" required disabled={isSubmitting} />
               </div>
-              <Button type="submit" disabled={isSubmitting} className="w-full bg-amber-600 hover:bg-amber-700 text-white py-8 text-lg rounded-xl font-bold">
+              <Button type="submit" disabled={isSubmitting} className="w-full bg-brand hover:bg-brand-700 text-white py-8 text-lg rounded-xl font-bold">
                 {isSubmitting ? <Loader2 className="animate-spin mr-2" /> : "Send Message"}
               </Button>
             </form>
