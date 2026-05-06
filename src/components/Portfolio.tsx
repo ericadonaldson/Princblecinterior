@@ -9,13 +9,13 @@ const projects = [
     id: "modern-minimalist-living",
     title: "Modern Minimalist Living",
     category: "Interior",
-    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop&fm=webp"
   },
   {
     id: "mediterranean-terrace",
     title: "Mediterranean Terrace",
     category: "Exterior",
-    image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=800&auto=format&fit=crop&fm=webp"
   },
   {
     id: "urban-loft-kitchen",
@@ -27,19 +27,19 @@ const projects = [
     id: "zen-garden-retreat",
     title: "Zen Garden Retreat",
     category: "Exterior",
-    image: "https://images.unsplash.com/photo-1558603668-6570496b66f8?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1558603668-6570496b66f8?q=80&w=800&auto=format&fit=crop&fm=webp"
   },
   {
     id: "classic-master-suite",
     title: "Classic Master Suite",
     category: "Interior",
-    image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=800&auto=format&fit=crop&fm=webp"
   },
   {
     id: "contemporary-poolside",
     title: "Contemporary Poolside",
     category: "Exterior",
-    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=800&auto=format&fit=crop&fm=webp"
   }
 ];
 

@@ -8,22 +8,22 @@ import { Button } from '@/components/ui/button';
 
 const slides = [
   {
-    url: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1600&auto=format&fit=crop",
+    url: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1600&auto=format&fit=crop&fm=webp",
     title: "Serene Living Spaces",
     category: "Interior Design"
   },
   {
-    url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop",
+    url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop&fm=webp",
     title: "Architectural Exteriors",
     category: "Exterior Design"
   },
   {
-    url: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1600&auto=format&fit=crop",
+    url: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1600&auto=format&fit=crop&fm=webp",
     title: "Modern Minimalist Kitchens",
     category: "Interior Design"
   },
   {
-    url: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop",
+    url: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop&fm=webp",
     title: "Breathtaking Poolside Retreats",
     category: "Exterior Design"
   }

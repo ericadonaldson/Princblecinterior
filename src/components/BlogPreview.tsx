@@ -11,7 +11,7 @@ const posts = [
     excerpt: "Discover how to balance velvet, wood, and metal to create a space that feels both cozy and sophisticated.",
     date: "Oct 12, 2023",
     author: "Akporuru Blessing",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800&auto=format&fit=crop&fm=webp",
     category: "Interior Tips"
   },
   {
@@ -19,7 +19,7 @@ const posts = [
     excerpt: "Eco-friendly design doesn't mean sacrificing style. Here are our top picks for sustainable luxury.",
     date: "Sep 28, 2023",
     author: "Marcus Thorne",
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop&fm=webp",
     category: "Sustainability"
   },
   {
@@ -27,7 +27,7 @@ const posts = [
     excerpt: "Even the smallest balcony can become a sanctuary with the right layout and plant selection.",
     date: "Sep 15, 2023",
     author: "Akporuru Blessing",
-    image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=800&auto=format&fit=crop&fm=webp",
     category: "Exterior Design"
   }
 ];

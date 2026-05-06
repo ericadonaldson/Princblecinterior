@@ -17,7 +17,7 @@ const About = () => {
           >
             <div className="relative z-10 rounded-[2.5rem] overflow-hidden aspect-[4/5] shadow-2xl group">
               <img 
-                src="https://images.unsplash.com/photo-1618219944342-824e40a13285?q=80&w=1000&auto=format&fit=crop" 
+                src="https://images.unsplash.com/photo-1618219944342-824e40a13285?q=80&w=1000&auto=format&fit=crop&fm=webp" 
                 alt="Designer at work"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
