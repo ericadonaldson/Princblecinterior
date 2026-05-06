@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Mail, Instagram, MapPin, Music2, Facebook, Phone, Loader2 } from 'lucide-react';
+import { Mail, Instagram, MapPin, Music2, Facebook, Phone, Loader2, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -70,71 +70,75 @@ const Contact = () => {
               Ready to transform your space? Whether you have a specific project in mind or just want to explore possibilities, we're here to help.
             </p>
 
-            <div className="space-y-8">
-              <div className="flex items-center gap-6">
-                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
-                  <Phone size={24} />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="space-y-8">
+                <div className="flex items-center gap-6">
+                  <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
+                    <Phone size={24} />
+                  </div>
+                  <div>
+                    <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Call Us</p>
+                    <a href="tel:+2348121241719" className="text-xl hover:text-brand transition-colors">+234 812 124 1719</a>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Call Us</p>
-                  <a href="tel:+2348121241719" className="text-xl hover:text-brand transition-colors">+234 812 124 1719</a>
+
+                <div className="flex items-center gap-6">
+                  <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
+                    <MessageCircle size={24} />
+                  </div>
+                  <div>
+                    <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">WhatsApp</p>
+                    <a href="https://wa.me/2348100582491" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-brand transition-colors">+234 810 058 2491</a>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-6">
+                  <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
+                    <Mail size={24} />
+                  </div>
+                  <div>
+                    <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Email Us</p>
+                    <a href="mailto:akporurublessing@gmail.com" className="text-xl hover:text-brand transition-colors">akporurublessing@gmail.com</a>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex items-center gap-6">
-                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
-                  <Mail size={24} />
+              <div className="space-y-8">
+                <div className="flex items-center gap-6">
+                  <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
+                    <Instagram size={24} />
+                  </div>
+                  <div>
+                    <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Instagram</p>
+                    <a href="https://www.instagram.com/prinblec_interior/" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-brand transition-colors">@prinblec_interior</a>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Email Us</p>
-                  <a href="mailto:akporurublessing@gmail.com" className="text-xl hover:text-brand transition-colors">akporurublessing@gmail.com</a>
-                </div>
-              </div>
 
-              <div className="flex items-center gap-6">
-                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
-                  <Instagram size={24} />
+                <div className="flex items-center gap-6">
+                  <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
+                    <Facebook size={24} />
+                  </div>
+                  <div>
+                    <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Facebook</p>
+                    <a href="https://www.facebook.com/share/1AU4rXDuQ7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-brand transition-colors">Gentle Prince</a>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Instagram</p>
-                  <a href="https://www.instagram.com/prinblec_interior/" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-brand transition-colors">@prinblec_interior</a>
-                </div>
-              </div>
 
-              <div className="flex items-center gap-6">
-                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
-                  <Facebook size={24} />
-                </div>
-                <div>
-                  <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Facebook</p>
-                  <a href="https://www.facebook.com/share/1AU4rXDuQ7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-brand transition-colors">Gentle Prince</a>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-6">
-                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
-                  <Music2 size={24} />
-                </div>
-                <div>
-                  <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">TikTok</p>
-                  <a href="https://tiktok.com/@princblecinterior" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-brand transition-colors">@princblecinterior</a>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-6">
-                <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
-                  <MapPin size={24} />
-                </div>
-                <div>
-                  <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Studio</p>
-                  <a 
-                    href="https://maps.google.com/?q=Gilbert+Odior+Street,+Thomas+Estate,+Ajah,+Lagos" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-xl hover:text-brand transition-colors"
-                  >
-                    Gilbert Odior Street, Thomas Estate, Ajah, Lagos
-                  </a>
+                <div className="flex items-center gap-6">
+                  <div className="w-12 h-12 rounded-full bg-stone-800 flex items-center justify-center text-brand">
+                    <MapPin size={24} />
+                  </div>
+                  <div>
+                    <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Studio</p>
+                    <a 
+                      href="https://maps.google.com/?q=Gilbert+Odior+Street,+Thomas+Estate,+Ajah,+Lagos" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-xl hover:text-brand transition-colors"
+                    >
+                      Thomas Estate, Ajah
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

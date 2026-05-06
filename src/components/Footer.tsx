@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Instagram, Mail, Music2, Facebook } from 'lucide-react';
+import { Instagram, Mail, Music2, Facebook, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const location = useLocation();
@@ -33,6 +33,9 @@ const Footer = () => {
         </Link>
         
         <div className="flex items-center space-x-6">
+          <a href="https://wa.me/2348100582491" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+            <MessageCircle size={20} />
+          </a>
           <a href="https://www.instagram.com/prinblec_interior/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
             <Instagram size={20} />
           </a>
