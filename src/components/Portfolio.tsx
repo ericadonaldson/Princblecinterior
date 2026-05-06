@@ -21,7 +21,7 @@ const projects = [
     id: "urban-loft-kitchen",
     title: "Urban Loft Kitchen",
     category: "Interior",
-    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1590650153855-d9e808231d41?q=80&w=800&auto=format&fit=crop"
   },
   {
     id: "zen-garden-retreat",
