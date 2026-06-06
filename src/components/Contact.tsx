@@ -134,9 +134,9 @@ const Contact = () => {
                       href="https://maps.google.com/?q=Vanara+Aprt.,+Off+Ocean+Breeze+Estate,+Ologolo,+Eti-Osa,+Lagos" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-xl hover:text-brand transition-colors"
+                      className="text-lg hover:text-brand transition-colors leading-tight block"
                     >
-                      Ologolo, Eti-Osa
+                      Vanara Aprt., Off Ocean Breeze Estate, Ologolo, Eti-Osa, Lagos
                     </a>
                   </div>
                 </div>
