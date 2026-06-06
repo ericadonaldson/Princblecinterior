@@ -131,12 +131,12 @@ const Contact = () => {
                   <div>
                     <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Studio</p>
                     <a 
-                      href="https://maps.google.com/?q=Gilbert+Odior+Street,+Thomas+Estate,+Ajah,+Lagos" 
+                      href="https://maps.google.com/?q=Vanara+Aprt.,+Off+Ocean+Breeze+Estate,+Ologolo,+Eti-Osa,+Lagos" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-xl hover:text-brand transition-colors"
                     >
-                      Thomas Estate, Ajah
+                      Ologolo, Eti-Osa
                     </a>
                   </div>
                 </div>
