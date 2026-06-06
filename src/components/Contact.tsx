@@ -120,7 +120,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-stone-500 uppercase tracking-widest font-bold">Facebook</p>
-                    <a href="https://www.facebook.com/share/1AU4rXDuQ7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-brand transition-colors">Gentle Prince</a>
+                    <a href="https://www.facebook.com/share/1AU4rXDuQ7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-brand transition-colors">Prinblecinterior Prince</a>
                   </div>
                 </div>
 
